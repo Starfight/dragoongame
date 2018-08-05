@@ -1,6 +1,6 @@
 import pygame
 
-from menu.movingtext import MovingText
+from graphics.movingtext import MovingText
 
 
 class App:
@@ -12,7 +12,7 @@ class App:
     def on_init(self):
         pygame.init()
         self._display_surf = pygame.display.set_mode(self.size, pygame.HWSURFACE | pygame.DOUBLEBUF)
-        self._title = MovingText(self._display_surf, "test")
+        self._title = MovingText(self._display_surf, "Dragoon game")
         self._running = True
 
     def on_event(self, event):
